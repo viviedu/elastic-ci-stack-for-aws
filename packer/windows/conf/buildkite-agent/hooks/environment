@@ -6,9 +6,9 @@ echo "~~~ :earth_asia: Setting up environment variables"
 source ~/cfn-env
 
 # a clean docker config for each job, for improved isolation
-BUILDKITE_DOCKER_CONFIG_TEMP_DIRECTORY=$(mktemp -d)
-export BUILDKITE_DOCKER_CONFIG_TEMP_DIRECTORY
-export DOCKER_CONFIG="$BUILDKITE_DOCKER_CONFIG_TEMP_DIRECTORY"
+# BUILDKITE_DOCKER_CONFIG_TEMP_DIRECTORY=$(mktemp -d)
+# export BUILDKITE_DOCKER_CONFIG_TEMP_DIRECTORY
+# export DOCKER_CONFIG="$BUILDKITE_DOCKER_CONFIG_TEMP_DIRECTORY"
 
 if [ "${BUILDKITE_DOCKER_EXPERIMENTAL:-false}" = "true" ]
 then
